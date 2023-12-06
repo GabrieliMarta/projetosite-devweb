@@ -14,6 +14,17 @@ body {
 }
 
 /* Estilos para o cabeçalho */
+.logoloja{
+    width: 50%;
+    
+}
+
+.divtopo{
+    width: 100%;
+    height: 30px;
+    background-color: var(--colortest1);
+}
+
 header {
     background-color:  #fff;
     color:#000000;
@@ -53,10 +64,10 @@ nav a {
     height: 400px;
   
 }
-
 /* Estilos para os produtos */
 .products {
     padding: 20px 0;
+    height: 100%;
 }
 
 .product {
