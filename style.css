@@ -1,33 +1,41 @@
-:root{
-    --colorblack:#000000;
-    --colortest1:#F06060;
-    --colortest2:#FFAD8E;
-    --colortest3:#DB4B50;
-    --colortest4:#D93636;
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+
+
+:root {
+    --colorblack: #000000;
+    --colortest1: #F06060;
+    --colortest2: #FFAD8E;
+    --colortest3: #DB4B50;
+    --colortest4: #D93636;
+    --fonte1: font-family: 'Inconsolata', monospace;
+    --fonte2: font-family: 'Merriweather', serif;
 }
 
 /* Estilos gerais */
 body {
     background-color: #fff;
     color: #333;
-    font-family: Arial, sans-serif;
+    font-family: inherit;
 }
 
 /* Estilos para o cabeçalho */
-.logoloja{
-    width: 50%;
-    
+.logoloja {
+    width: 75%;
+
 }
 
-.divtopo{
+.divtopo {
     width: 100%;
     height: 20px;
     background-color: var(--colortest1);
 }
 
 header {
-    background-color:  #fff;
-    color:#000000;
+    background-color: #fff;
+    color: #000000;
     padding: 20px 0;
 }
 
@@ -35,56 +43,87 @@ header img {
     max-width: 100%;
 }
 
-nav ul {
-    list-style: none;
+nav {
+    background-color: white;
+    margin-top: 20px;
+    text-align: center;
+    font-family: inheri;
+    font-size: 18px;
+    color: #333;
+
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+nav li {
+    display: inline-block;
+
 }
 
-nav a {
-    color: #000000;
+nav li a {
+    display: inline-block;
+    color: black;
     text-decoration: none;
+    padding: 15px;
+
 }
 
-/* Estilos para o banner de promoções */
-.promo-banner {
-    background-color:  #fff;
-    color:#000000;
-    text-align: center;
-    padding: 40px 0;
+nav li a:hover {
+    background-color: var(--colortest1);
+    color: white;
 }
 
-.promo-banner h1 {
-    font-size: 2em;
-}
-.carousel-img {
-    height: 400px;
-  
-}
-/* Estilos para os produtos */
-.products {
-    padding: 20px 0;
-    height: 100%;
+.dropdown-menu {
+    position: absolute;
+    display: none;
 }
 
-.product {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    margin: 10px;
-    padding: 20px;
-    text-align: center;
+.dropdown-menu a {
+    display: block;
+    color: black;
+    font-family: inheri;
 }
 
-.product img {
-    max-width: 100%;
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
+
+.card-img-top {
+    height: 350px;
+    width: 50px;
+
+}
+
+.row {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.item {
+    height: 450px;
+    width: 400px;
+
+}
+
+.text-danger {
+    font-size: 30px;
+    color: #000000;
+}
+
+h4 {
+    font-size: 20px;
+    font-family: inheri;
+    ;
+
+}
+
+h3 {
+    font-family: inheri;
+    ;
+}
+
 
 /* Estilos para o rodapé */
 footer {
-    background-color:  var(--colortest1);
+    background-color: var(--colortest1);
     color: #000000;
     padding: 40px 0;
 }
@@ -93,6 +132,7 @@ footer h4 {
     font-size: 1.5em;
 }
 
-footer p, footer ul {
+footer p,
+footer ul {
     font-size: 1.2em;
 }
