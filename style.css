@@ -21,6 +21,10 @@ body {
     font-family: inherit;
 }
 
+.tagvazia{
+    color: var(--colortest1) ;
+}
+
 /* Estilos para o cabeçalho */
 .logoloja {
     width: 75%;
